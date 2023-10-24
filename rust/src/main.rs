@@ -249,7 +249,7 @@ pub fn main() -> Result<(), String> {
     let sdl_context: sdl2::Sdl = sdl2::init()?;
     let video_subsystem: sdl2::VideoSubsystem = sdl_context.video()?;
     let ttf_context: ttf::Sdl2TtfContext = sdl2::ttf::init().map_err(|e| e.to_string())?;
-    let font: ttf::Font = ttf_context.load_font("/home/matt/Rust_Snake/assets/komikax_.ttf", FONT_POINT_SIZE)?;
+    let font: ttf::Font = ttf_context.load_font("assets/komikax_.ttf", FONT_POINT_SIZE)?;
 
     let window: Window = video_subsystem.window(
         "Snake",
